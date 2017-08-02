@@ -55,7 +55,7 @@ MonoBehaviour:
     min: 0.05
     max: 0.15
   scale:
-    min: 0.5
+    min: 0.25
     max: 1
   randomVelocity:
     min: 0
@@ -63,7 +63,9 @@ MonoBehaviour:
   angularVelocity:
     min: 0
     max: 4
-  velocity: 15
+  velocity: 17
   stuffPrefabs:
   - {fileID: 114662960901324322, guid: ad4abf143edfb44f7b6872b15c6ec9e6, type: 2}
+  - {fileID: 114117059378771852, guid: 68c7291bfc85044f280ed55d0fb11a44, type: 2}
+  - {fileID: 114418251365027890, guid: 0c2389301d8194dcf9d0ca53f61b4cf2, type: 2}
   stuffMaterial: {fileID: 0}

@@ -234,14 +234,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3f1cfd81c5d149c096794cda66420db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfSpawners: 15
-  radius: 15
+  numberOfSpawners: 30
+  radius: 20
   tiltAngle: -20
   spawnerPrefab: {fileID: 114191112285657280, guid: 03f8c7e9b984747de8f3446c8170d0e9,
     type: 2}
   stuffMaterials:
   - {fileID: 2100000, guid: 19f3299a163d544a2a51f04dcc5b1181, type: 2}
   - {fileID: 2100000, guid: 2ef310c097ad24be1bb2057df10df6ee, type: 2}
+  - {fileID: 2100000, guid: af19960b74ed642838dbc34163838efd, type: 2}
 --- !u!4 &213253331
 Transform:
   m_ObjectHideFlags: 0
@@ -332,7 +333,7 @@ Transform:
   m_GameObject: {fileID: 610953608}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_LocalScale: {x: 12, y: 12, z: 12}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -604,7 +605,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1216666803}
   m_LocalRotation: {x: 0.043619405, y: 0, z: 0, w: 0.9990483}
-  m_LocalPosition: {x: 0, y: 5, z: -25}
+  m_LocalPosition: {x: 0, y: 5, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

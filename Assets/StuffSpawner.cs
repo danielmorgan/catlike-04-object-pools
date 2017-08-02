@@ -19,15 +19,13 @@ public class StuffSpawner : MonoBehaviour {
         if (timeSinceLastSpawn >= currentSpawnDelay) {
             timeSinceLastSpawn -= currentSpawnDelay;
             currentSpawnDelay = timeBetweenSpawns.RandomInRange;
-			SpawnStuff();
+            SpawnStuff();
 		}
 	}
 
 	void SpawnStuff () {
 		Stuff prefab = stuffPrefabs[Random.Range(0, stuffPrefabs.Length)];
-        Stuff spawn = Instantiate<Stuff>(prefab);
-
-        spawn.GetComponent<MeshRenderer>().material = stuffMaterial;
+        Stuff spawn = prefab.GetPooledInstance<Stuff>();
 
         spawn.transform.localPosition = transform.position;
         spawn.transform.localScale = Vector3.one * scale.RandomInRange;
@@ -35,5 +33,7 @@ public class StuffSpawner : MonoBehaviour {
 
         spawn.Body.velocity = transform.up * velocity + Random.onUnitSphere * randomVelocity.RandomInRange;
         spawn.Body.angularVelocity = Random.onUnitSphere * angularVelocity.RandomInRange;
-	}
+
+        spawn.SetMaterial(stuffMaterial);
+    }
 }
