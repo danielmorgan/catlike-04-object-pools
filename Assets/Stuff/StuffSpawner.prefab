@@ -63,7 +63,7 @@ MonoBehaviour:
   angularVelocity:
     min: 0
     max: 4
-  velocity: 17
+  velocity: 14
   stuffPrefabs:
   - {fileID: 114662960901324322, guid: ad4abf143edfb44f7b6872b15c6ec9e6, type: 2}
   - {fileID: 114117059378771852, guid: 68c7291bfc85044f280ed55d0fb11a44, type: 2}
